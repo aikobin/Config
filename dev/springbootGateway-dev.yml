@@ -1,0 +1,35 @@
+eureka:
+  instance:
+      hostname: 192.168.32.140
+      port: 8761
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.32.140:8761/eureka/    # 指定注册中心的地址
+      
+zuul:
+  routes:
+    springboot-demo:
+      path: /demo/**
+    springboot-auth:
+      path: /auth/**
+  add-proxy-headers: true
+  sensitive-headers:      #清空zuul过滤的请求头信息
+#安全配置
+security:
+  basic:
+    enabled: false
+  oauth2:
+      access-token-uri: http://192.168.32.140:8765/auth/oauth/token
+      user-authorization-uri: http://192.168.32.140:8765/auth/oauth/authorize
+  resource:
+      user-info-uri:  http://192.168.32.140:8765/auth/user
+      prefer-token-info: false
+     # filter-order: 3
+
+management:
+  security:
+    enabled: false # spring-boot 1.5.2之后严格执行安全策略，所以需要配置这个为false ,否则很多点监控不到
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds : 60000
+ribbon.ConnectTimeout: 20000
+ribbon.ReadTimeout: 35000
