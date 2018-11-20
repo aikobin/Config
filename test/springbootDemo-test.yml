@@ -27,19 +27,17 @@ spring:
    #  timeout: 1000
 eureka:
   instance:
-     # hostname: 192.168.32.140
-      hostname: 127.0.0.1
-      port: 8761
+     hostname: 192.168.32.140
+     port: 8761
   client:
     serviceUrl:
-      #defaultZone: http://192.168.32.140:8761/eureka/    # 指定注册中心的地址
-      defaultZone: http://127.0.0.1:8761/eureka/
+      defaultZone: http://192.168.32.140:8761/eureka/    # 指定注册中心的地址
 management:
   security:
     enabled: false # spring-boot 1.5.2之后严格执行安全策略，所以需要配置这个为false ,否则很多点监控不到
 security:
   oauth2:
     resource:
-      user-info-uri:  http://localhost:8765/auth/user
+      user-info-uri:  http://192.168.32.140:8765/auth/user
       prefer-token-info: false
       filter-order: 3
