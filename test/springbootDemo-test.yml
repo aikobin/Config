@@ -40,3 +40,6 @@ security:
       user-info-uri:  http://127.0.0.1:8765/auth/user
       prefer-token-info: false
       filter-order: 3
+feign:
+  hystrix:
+    enabled: false
