@@ -45,4 +45,4 @@ feign:
     enabled: false
 logging:
   level:
-    com.bin.feign.api.TestApi: DEBUG    
+    com.bin.springboot.api.TestClientApi: DEBUG    
