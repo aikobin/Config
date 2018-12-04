@@ -43,6 +43,6 @@ security:
 feign:
   hystrix:
     enabled: false
-logging:
-  level:
-    com.bin.springboot.api.TestClientApi: INFO    
+#logging:
+#  level:
+#    com.bin.springboot.api.TestClientApi: DEBUG    
