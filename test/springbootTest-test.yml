@@ -34,9 +34,9 @@ eureka:
 management:
   security:
     enabled: false # spring-boot 1.5.2之后严格执行安全策略，所以需要配置这个为false ,否则很多点监控不到
-security:
-  oauth2:
-    resource:
-      user-info-uri:  http://127.0.0.1:8765/auth/user
-      prefer-token-info: false
-      filter-order: 3
+#security:
+#  oauth2:
+#    resource:
+#      user-info-uri:  http://127.0.0.1:8765/auth/user
+#      prefer-token-info: false
+#      filter-order: 3
