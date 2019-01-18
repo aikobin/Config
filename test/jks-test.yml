@@ -3,7 +3,7 @@ spring:
       driver-class-name: com.mysql.jdbc.Driver
       url: jdbc:mysql://192.168.32.140:3306/springbootdemo?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
       username: root
-      password: root
+      password: '{cipher}AQC3Kri6l6E9GYVbbQtTTtluZnLK1xRFD5IdXfGwjmxhBnAZuSqX9Dw75vfiBrQbNR6Cf/R4vhEIGhgSRRkoc3Gfgho7SpT5CZ5BWgxif6CXZkSG14ILFonVNBBWw2SwstNiCIaIzTea2B7UPJjuK81Ois1168sOdq7To+IZnave3bmN+2L3NJX0pDSm7U018W9V1oA1AyB2QvTJQbPjn4TJJGSbUUB/wt9EH1v3nWLYkrTayB4dGT6W4/VRvECFGxZg02QCVHuNmpuF/Lt2ubXiraD8uXY6N5qdOW45rNb3VkwRwYb+jTt7pTY6KLN5rXBGYsD3gwsLF7QbccY27t3IuxSnk1MGDGCweLNpy0Mhc7ohGnown4l21m94UY1B3wY='
   redis:
     database: 0
     host: 192.168.32.140
