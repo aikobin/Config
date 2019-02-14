@@ -42,4 +42,4 @@ security:
       filter-order: 3
 feign:
   hystrix:
-    enabled: false
+    enabled: true
