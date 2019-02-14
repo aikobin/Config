@@ -10,7 +10,7 @@ eureka:
 
 zuul:
   routes:
-    springboot-demo:
+    springboot-demoz:
       path: /demo/**
     springboot-auth:
       path: /auth/**
