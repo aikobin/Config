@@ -14,8 +14,8 @@ zuul:
       path: /demo/**
     springboot-auth:
       path: /auth/**
-  #add-proxy-headers: true
-  #sensitive-headers:      #清空zuul过滤的请求头信息
+  add-proxy-headers: true
+  sensitive-headers:      #清空zuul过滤的请求头信息
 #安全配置
 security:
   basic:
