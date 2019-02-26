@@ -3,6 +3,11 @@ spring:
       elasticsearch:
         cluster-nodes: 192.168.32.140:9300
         cluster-name: elasticsearch
+        # 是否本地连接
+        local: false
+        repositories:
+        # 仓库中数据存储
+         enabled: true
    datasource:
       driver-class-name: com.mysql.jdbc.Driver
       url: jdbc:mysql://192.168.32.140:3306/springbootdemo?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
