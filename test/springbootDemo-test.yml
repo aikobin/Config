@@ -1,6 +1,9 @@
 spring:
    data:
       elasticsearch:
+        client:
+          transport:
+            sniff: false
         cluster-nodes:
           192.168.32.140:9300
         cluster-name:
