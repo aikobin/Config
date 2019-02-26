@@ -2,9 +2,8 @@ spring:
    data:
       elasticsearch:
         cluster-nodes: 192.168.32.140:9300
-        cluster-name: elasticsearch
         # 是否本地连接
-        local: false
+        local: true
         repositories:
         # 仓库中数据存储
          enabled: true
