@@ -2,7 +2,7 @@ spring:
    data:
       elasticsearch:
         cluster-nodes:
-          192.168.32.140:9300
+          192.168.32.140:9500
    datasource:
       driver-class-name: com.mysql.jdbc.Driver
       url: jdbc:mysql://192.168.32.140:3306/springbootdemo?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
